@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="EventLens icon">
+  <rect width="128" height="128" rx="18" fill="#1f7a63"/>
+  <circle cx="64" cy="58" r="32" fill="#ffffff"/>
+  <circle cx="64" cy="58" r="18" fill="#1f7a63"/>
+  <path d="M26 101c17-17 59-17 76 0" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+</svg>
