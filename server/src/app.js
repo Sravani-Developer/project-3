@@ -37,7 +37,19 @@ function createApp() {
     });
   }
 
-  app.use(helmet());
+  app.use(
+    helmet({
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          'img-src': ["'self'", 'data:', 'https://images.unsplash.com'],
+          'connect-src': ["'self'", clientOrigin],
+          'script-src': ["'self'"],
+          'style-src': ["'self'", "'unsafe-inline'"]
+        }
+      }
+    })
+  );
   app.use(compression());
   app.use(morgan(isProduction ? 'combined' : 'dev'));
   app.use(express.json({ limit: '1mb' }));
